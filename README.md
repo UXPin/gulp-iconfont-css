@@ -48,6 +48,11 @@ Type: `String`
 
 The name of the generated font family (required). **Important**: Has to be identical to iconfont's ```fontName``` option.
 
+#### options.fileName
+Type: `String`
+
+The name of the generated font file. (optional, default value is same as a ```fontName``` option).
+
 #### options.path
 Type: `String`
 
