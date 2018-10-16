@@ -76,5 +76,17 @@ Name of the generated CSS class/placeholder. Used for mixins and functions, too.
 #### options.engine
 Type: `String`
 
+#### options.aliases
+Type: `Object`
+
+Use if you want multiple class names for the same font/svg value ie. use the github svg as .github or .git
+
 The template engine to use (optional, defaults to ```lodash```). 
 See https://github.com/visionmedia/consolidate.js/ for available engines. The engine has to be installed before using.
+
+#### options.cacheBuster
+Type: `String`
+
+A string that will be appended to fonts URLs as query string (optional, defaults to the emtpy string, i.e. no cache buster).
+Query string heading questing mark `?` is included automatically.
+Useful to dodge HTTP cache when deploying a modified iconfont.
